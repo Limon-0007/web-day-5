@@ -8,6 +8,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
+body {
+  background: #F3F3F3;
+  behavior: smooth;
+}
+
 /* some common css */
 
 nav {
@@ -31,8 +36,14 @@ nav ul li a {
   margin-right: 20px;
   color: #474747;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
 }
+
+nav ul li a:hover {
+  color: #fd6e0a;
+}
+
 .nav-item {
   display: flex;
 }
@@ -150,27 +161,92 @@ nav ul li a {
 }
 
 .about-texts p {
-    padding: 40px 50px;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
+  padding: 40px 50px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* about footer */
 
 .about-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 60px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .about-title {
-    color: #757575;
+  color: #757575;
 }
 
 .about-body {
-    color: #474747;
+  color: #474747;
+}
+
+/* what i do section starts from here */
+
+.section-title {
+  font-weight: 700;
+  font-size: 35px;
+  color: #181818;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.section-description {
+  text-align: center;
+  padding: 10px 100px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+}
+
+/* cards */
+
+.cards {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.what-i-do-cards {
+  background-color: #FFFFFF;
+  padding: 25px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.what-i-do-cards:hover {
+  transform: scale(1.1);
+  background-color: rgb(218, 157, 167);
+}
+
+.what-i-do-cards:hover .card-title{
+  color: #fff;
+}
+
+.what-i-do-cards:hover .card-body {
+  color: #fff;
+}
+
+.card-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #181818;
+}
+
+.card-body {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
 }
