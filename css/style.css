@@ -248,3 +248,47 @@ nav ul li a:hover {
   font-weight: 400;
   font-size: 16px;
 }
+
+/* resume section starts from here */
+
+.resume-container {
+  display: flex;
+  gap: 35px;
+  padding: 60px;
+}
+
+.resume-heading {
+  font-size: 25px;
+  color: #474747;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.resume-title {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.resume-subtitle {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.resume-description {
+  color: #757575;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.resume-item {
+  margin-bottom: 25px;
+}
+
+.resume-btn {
+  text-align: center;
+}
